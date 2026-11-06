@@ -116,7 +116,7 @@ section{padding-block:56px 0}
 .intro{display:flex;justify-content:space-between;align-items:end;gap:10px 30px;flex-wrap:wrap;margin-bottom:22px}
 
 /* media pool */
-.seqs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.seqs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .seq{position:relative;display:block;border-radius:6px;overflow:hidden;border:1px solid var(--line);background:var(--panel2)}
 .seq .thumb{position:relative;aspect-ratio:16/9;max-width:100%;overflow:hidden;background:#000}
 .seq img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
@@ -539,7 +539,8 @@ const INLINE_PLAYER=true;
 const thumb=id=>`https://i.ytimg.com/vi/${id}/oar2.jpg`;
 const wide=id=>`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
 const LONG=[
-  {id:'R24gMsWtmwA',t:'Neverness to Everness 1.5 Livestream: Elyms vs Exe, Banners, Codes & Everything New',len:'9:10',tag:'Newest'},
+  {id:'TqvWKRC59-g',t:'Aha Full Guide: Kit Breakdown, Best Teams & What to Farm Before Nov 11',len:'9:00',tag:'Newest'},
+  {id:'R24gMsWtmwA',t:'Neverness to Everness 1.5 Livestream: Elyms vs Exe, Banners, Codes & Everything New',len:'9:10',tag:'16:9'},
   {id:'Zvt9qk3s5iM',t:"ZZZ x Honkai: Star Rail Crossover: Who's Free, What's Leaked & What to Save For",len:'8:13',tag:'16:9'},
 ];
 const LATEST=[
