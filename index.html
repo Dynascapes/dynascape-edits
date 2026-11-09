@@ -242,6 +242,7 @@ section.tight{padding-block:0;margin-top:14px}
 .feature .len{position:absolute;right:7px;bottom:7px;font-family:var(--mono);font-size:11px;font-weight:600;background:rgba(0,0,0,.75);padding:2px 7px;border-radius:3px}
 .feature .play{position:absolute;inset:auto 0 15% 0;margin-inline:auto;width:56px;height:56px;border-radius:50%;background:var(--cap);display:grid;place-items:center}
 .feature .play svg{width:22px;height:22px;fill:var(--ink);margin-left:3px}
+.feature.wide{grid-template-columns:minmax(0,440px) minmax(0,1fr)}.feature.wide .thumb{aspect-ratio:16/9}
 .feature .ftext{min-width:0;display:grid;gap:10px;max-width:62ch}
 .feature h3{font-family:var(--display);font-size:clamp(30px,5vw,44px);line-height:1;font-weight:800;text-transform:uppercase;letter-spacing:.01em;text-wrap:balance}
 .feature p{color:var(--muted);line-height:1.6}
@@ -249,7 +250,7 @@ section.tight{padding-block:0;margin-top:14px}
 .tags{display:flex;flex-wrap:wrap;gap:6px}
 .tags span{font-family:var(--mono);font-size:11px;color:var(--text);border:1px solid var(--line);border-radius:3px;padding:3px 7px}
 @media (max-width:760px){.proof{grid-template-columns:minmax(0,1fr)}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.strip{grid-template-columns:minmax(0,1fr)}.strip .btn{justify-self:start}}
-@media (max-width:620px){.compare{grid-template-columns:minmax(0,1fr)}.tabs{gap:0;flex-wrap:nowrap}.tabs button{padding:10px 8px;font-size:12px;flex:1;text-align:center}.feature{grid-template-columns:minmax(0,1fr)}.feature .thumb{width:min(230px,100%);margin-inline:auto}}
+@media (max-width:620px){.compare{grid-template-columns:minmax(0,1fr)}.tabs{gap:0;flex-wrap:nowrap}.tabs button{padding:10px 8px;font-size:12px;flex:1;text-align:center}.feature{grid-template-columns:minmax(0,1fr)}.feature .thumb{width:min(230px,100%);margin-inline:auto}.feature.wide{grid-template-columns:minmax(0,1fr)}.feature.wide .thumb{width:100%}}
 .x{position:absolute;top:14px;right:20px;font-size:30px;line-height:1}
 
 @media (max-width:1020px){
@@ -394,7 +395,21 @@ section.tight{padding-block:0;margin-top:14px}
       <div class="ptitle"><span><b>Media Pool</b></span><span>Featured · Client work · Before/after · 4 bins</span></div>
       <div class="pbody">
         <div class="intro"><h2 class="big">Recent work</h2><p class="sub">Shorts and long videos are real uploads with their real view counts. Motion and Memes are samples from my showreel. Tap any video to play it.</p></div>
-        <div class="binhead" style="margin-top:0"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16l-5.4 3 1.2-6-4.5-4.2 6.1-.7z"/></svg><b>Featured edit</b><span>· personal project</span></div>
+        <div class="binhead" style="margin-top:0"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16l-5.4 3 1.2-6-4.5-4.2 6.1-.7z"/></svg><b>Featured edit</b><span>· personal project · newest</span></div>
+        <div class="feature wide">
+          <a href="media/shinku-amv-highlight.mp4" data-video="media/shinku-amv-highlight.mp4" data-wide="1" data-poster="media/shinku-amv-highlight.jpg" aria-label="Play the Shinku AMV highlight">
+            <span class="thumb"><img loading="lazy" alt="Shinku's scream cracking like glass" src="media/shinku-amv-highlight.jpg"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span><span class="len">1:02</span></span>
+          </a>
+          <div class="ftext">
+            <h3>Shinku AMV: The Dragon Inside Her</h3>
+            <p>An NTE AMV where Shinku loses control and her friends' real voices pull her back. I built her inner world, the glass shatter and the 真紅 title in Blender, tracked her into 3D with AI cut-outs, and wrote the story from the game's own voice lines.</p>
+            <p class="fprice">Cinematic edits from $100. Custom 3D from $200.</p>
+            <p><a href="https://drive.google.com/file/d/12kJLIwLFEhTgp_CwdYv1Cu3Au00ga8po/view" target="_blank" rel="noopener" style="color:var(--cap);font-weight:600">Watch the full 3:45 AMV ↗</a></p>
+            <div class="tags"><span>3D in Blender</span><span>Story edit</span><span>AI cut-outs</span><span>Sound design</span><span>Beat sync</span></div>
+            <p style="font-family:var(--mono);font-size:11px;color:var(--muted)">Music: MONTAGEM KOE by BellyJay · 3D dragon by MattBas, CC BY-SA 4.0</p>
+          </div>
+        </div>
+        <div class="binhead"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16l-5.4 3 1.2-6-4.5-4.2 6.1-.7z"/></svg><b>Featured edit</b><span>· personal project</span></div>
         <div class="feature">
           <a href="media/makima-plush-amv.mp4" data-video="media/makima-plush-amv.mp4" data-poster="media/makima-plush-amv.jpg" aria-label="Play the Makima Plush AMV">
             <span class="thumb"><img loading="lazy" alt="Makima plush in front of a red moon" src="media/makima-plush-amv.jpg"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span><span class="len">1:03</span></span>
