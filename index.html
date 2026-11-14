@@ -214,6 +214,8 @@ footer{margin-top:56px;border-top:1px solid var(--line);background:var(--well)}
 .tabs button{all:unset;cursor:pointer;font-family:var(--mono);font-size:13px;font-weight:600;color:var(--muted);padding:10px 14px;border-bottom:3px solid transparent;margin-bottom:-1px}
 .tabs button:hover{color:var(--text)}
 .tabs button[aria-selected="true"]{color:var(--cap);border-bottom-color:var(--cap)}
+.binhead[id],.clipcard[id],.seq[id],.tabs [role=tab]{scroll-margin-top:84px}
+.flash{outline:3px solid var(--cap);outline-offset:6px;border-radius:12px;transition:outline-color 2s}
 .tabs button:focus-visible{outline:2px solid var(--cap)}
 section.tight{padding-block:0;margin-top:14px}
 #process{scroll-margin-top:76px}
@@ -395,7 +397,7 @@ section.tight{padding-block:0;margin-top:14px}
       <div class="ptitle"><span><b>Media Pool</b></span><span>Featured · Client work · Before/after · 4 bins</span></div>
       <div class="pbody">
         <div class="intro"><h2 class="big">Recent work</h2><p class="sub">Shorts and long videos are real uploads with their real view counts. Motion and Memes are samples from my showreel. Tap any video to play it.</p></div>
-        <div class="binhead" style="margin-top:0"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16l-5.4 3 1.2-6-4.5-4.2 6.1-.7z"/></svg><b>Featured edit</b><span>· personal project · newest</span></div>
+        <div class="binhead" id="shinku" style="margin-top:0"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16l-5.4 3 1.2-6-4.5-4.2 6.1-.7z"/></svg><b>Featured edit</b><span>· personal project · newest</span></div>
         <div class="feature wide">
           <a href="https://www.youtube.com/watch?v=k6Ib6-1sn9I" data-id="k6Ib6-1sn9I" data-wide="1" aria-label="Play the Shinku AMV">
             <span class="thumb"><img loading="lazy" alt="Shinku AMV thumbnail: her glowing red eyes between the 真 and 紅 kanji" src="media/shinku-amv-thumb.jpg"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span><span class="len">3:39</span></span>
@@ -409,7 +411,7 @@ section.tight{padding-block:0;margin-top:14px}
             <p style="font-family:var(--mono);font-size:11px;color:var(--muted)">Music: MONTAGEM KOE by BellyJay · 3D dragon by MattBas, CC BY-SA 4.0</p>
           </div>
         </div>
-        <div class="binhead"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16l-5.4 3 1.2-6-4.5-4.2 6.1-.7z"/></svg><b>Featured edit</b><span>· personal project</span></div>
+        <div class="binhead" id="makima"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16l-5.4 3 1.2-6-4.5-4.2 6.1-.7z"/></svg><b>Featured edit</b><span>· personal project</span></div>
         <div class="feature">
           <a href="media/makima-plush-amv.mp4" data-video="media/makima-plush-amv.mp4" data-poster="media/makima-plush-amv.jpg" aria-label="Play the Makima Plush AMV">
             <span class="thumb"><img loading="lazy" alt="Makima plush in front of a red moon" src="media/makima-plush-amv.jpg"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span><span class="len">1:03</span></span>
@@ -421,7 +423,7 @@ section.tight{padding-block:0;margin-top:14px}
             <div class="tags"><span>3D in Blender</span><span>Beat sync</span><span>Color grade</span><span>Compositing</span><span>Subtitles</span></div>
           </div>
         </div>
-        <div class="binhead"><svg viewBox="0 0 24 24"><path d="M4 7.5A1.5 1.5 0 0 1 5.5 6h13A1.5 1.5 0 0 1 20 7.5v10a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 17.5zM9 6V4.5h6V6"/></svg><b>Client work</b><span>· SaylorSensei, VTuber</span></div>
+        <div class="binhead" id="saylor"><svg viewBox="0 0 24 24"><path d="M4 7.5A1.5 1.5 0 0 1 5.5 6h13A1.5 1.5 0 0 1 20 7.5v10a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 17.5zM9 6V4.5h6V6"/></svg><b>Client work</b><span>· SaylorSensei, VTuber</span></div>
         <div class="feature">
           <a href="media/saylor-breaking-bad.mp4" data-video="media/saylor-breaking-bad.mp4" data-poster="media/saylor-breaking-bad.jpg" aria-label="Play Learn Japanese with Breaking Bad">
             <span class="thumb"><img loading="lazy" alt="SaylorSensei's avatar under the Breaking Bad poster, captioned BREAKING BADDO" src="media/saylor-breaking-bad.jpg"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg></span><span class="len">0:25</span></span>
@@ -434,7 +436,7 @@ section.tight{padding-block:0;margin-top:14px}
             <div class="tags"><span>Client work</span><span>Japanese captions</span><span>Word cards</span><span>VTuber</span><span>Instagram Reel</span></div>
           </div>
         </div>
-        <div class="binhead"><svg viewBox="0 0 24 24"><path d="M12 4v16M5 8l-3 4 3 4M19 8l3 4-3 4"/></svg><b>Before / after</b><span>· drag to compare</span></div>
+        <div class="binhead" id="before-after"><svg viewBox="0 0 24 24"><path d="M12 4v16M5 8l-3 4 3 4M19 8l3 4-3 4"/></svg><b>Before / after</b><span>· drag to compare</span></div>
         <div class="compare">
           <figure>
             <div class="ba four" style="--x:50%">
@@ -616,15 +618,15 @@ lanes.addEventListener('click',e=>{const r=lanes.getBoundingClientRect();seek((e
 new IntersectionObserver(([e])=>{e.isIntersecting?startVid():vid.pause()},{threshold:.2}).observe(vid);
 
 /* media pool */
-document.getElementById('seqs').innerHTML=LONG.map(v=>`<a class="seq" href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener" data-id="${v.id}" data-wide="1">
+document.getElementById('seqs').innerHTML=LONG.map(v=>`<a class="seq" id="v-${v.id}" href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener" data-id="${v.id}" data-wide="1">
   <div class="thumb"><img loading="lazy" alt="" src="${wide(v.id)}"><span class="len">${v.len}</span></div>
   <div class="meta"><span class="chip">${v.tag}</span><h3>${esc(v.t)}</h3></div></a>`).join('');
-const card=v=>`<a class="clipcard" href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener" data-id="${v.id}">
+const card=v=>`<a class="clipcard" id="v-${v.id}" href="https://www.youtube.com/shorts/${v.id}" target="_blank" rel="noopener" data-id="${v.id}">
   <div class="thumb"><img loading="lazy" alt="" src="${thumb(v.id)}">${v.v==='new'?'<span class="views new">NEW</span>':`<span class="views">${v.v} views</span>`}</div>
   <div class="meta"><h3>${esc(v.t)}</h3><span class="mono">${v.k}</span></div></a>`;
 document.getElementById('latest').innerHTML=LATEST.map(card).join('');
 document.getElementById("viewed").innerHTML=TOP.map(card).join('');
-const style=v=>`<a class="seq" href="media/${v.f}.mp4" data-video="media/${v.f}.mp4" data-poster="media/styles/${v.p}.jpg" data-wide="1">
+const style=v=>`<a class="seq" id="clip-${v.p}" href="media/${v.f}.mp4" data-video="media/${v.f}.mp4" data-poster="media/styles/${v.p}.jpg" data-wide="1">
   <div class="thumb"><img loading="lazy" alt="" src="media/styles/${v.p}.jpg"><span class="len">${v.len}</span></div>
   <div class="meta"><span class="chip">${v.tag}</span><h3>${esc(v.t)}</h3></div></a>`;
 document.getElementById('motionGrid').innerHTML=[
@@ -641,6 +643,13 @@ const tabs=[...document.querySelectorAll('.tabs [role=tab]')];
 const showTab=t=>{tabs.forEach(b=>{const on=b===t;b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;document.getElementById(b.getAttribute('aria-controls')).hidden=!on})};
 tabs.forEach((t,i)=>{t.addEventListener('click',()=>showTab(t));t.addEventListener('keydown',e=>{const d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(d){const n=tabs[(i+d+tabs.length)%tabs.length];showTab(n);n.focus()}})});
 showTab(tabs[0]);
+/* deep links: #saylor #shinku #makima #before-after, #shorts #long #motion #memes, or one clip (#v-<youtube id>, #clip-<style>) */
+const goHash=()=>{const h=decodeURIComponent(location.hash.slice(1));if(!h)return;
+  const tab=document.getElementById('t-'+h);if(tab){showTab(tab);tab.scrollIntoView({block:'start'});return}
+  const el=document.getElementById(h);if(!el)return;
+  const p=el.closest('[role=tabpanel]');if(p&&p.hidden)showTab(document.getElementById(p.getAttribute('aria-labelledby')));
+  requestAnimationFrame(()=>{el.scrollIntoView({block:'start'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),2400)})};
+window.addEventListener('hashchange',goHash);goHash();window.addEventListener('load',()=>{if(location.hash)goHash()});
 
 /* before / after sliders: sweep once on sight so people see they move */
 document.querySelectorAll('.ba').forEach(b=>{
